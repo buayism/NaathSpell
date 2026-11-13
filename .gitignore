@@ -1,0 +1,10 @@
+# Streamlit secrets (contains GitHub token — never commit!)
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.pyc
+
+# Word temp files
+~$*.docx
+~WRL*.tmp

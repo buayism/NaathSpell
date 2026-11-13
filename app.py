@@ -13,6 +13,7 @@ from pathlib import Path
 # Ensure the checker module is importable
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from checker import SpellChecker, nfc_lower
+from github_commit import commit_word
 
 
 # ---------------------------------------------------------------------------
@@ -295,6 +296,22 @@ if results:
                     if st.button("➕ Add", key=f"add_{idx}", use_container_width=True):
                         sc.add_word(tok)
                         r["is_known"] = True
+                        # Commit to GitHub if secrets are configured
+                        try:
+                            gh = st.secrets["github"]
+                            commit_word(
+                                word=tok,
+                                freq=1,
+                                token=gh["token"],
+                                repo=gh["repo"],
+                                branch=gh.get("branch", "main"),
+                            )
+                            st.toast(f"✅ '{tok}' committed to GitHub", icon="✅")
+                        except KeyError:
+                            # No GitHub secrets configured — local-only add
+                            st.toast(f"'{tok}' added (local only — GitHub secrets not set)", icon="⚠️")
+                        except Exception as e:
+                            st.toast(f"Added locally but GitHub commit failed: {e}", icon="❌")
                         st.rerun()
                 with cols[3]:
                     if st.button("🚫 Ignore", key=f"ign_{idx}", use_container_width=True):
