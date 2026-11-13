@@ -1,0 +1,11 @@
+token	label	intended
+kɛ	OK	
+mi̱	OK	
+ɣöö	OK	
+naath	OK	
+cuɛ	OK	
+xkɛ	ERR	kɛ
+naaht	ERR	naath
+bi̱z	ERR	bi̱
+cuux	ERR	cu
+ɣoox	ERR	ɣöö
