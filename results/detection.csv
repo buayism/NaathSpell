@@ -1,0 +1,4 @@
+file,N,TP,TN,FP,FN,accuracy,TPR,TNR,NWD_accuracy,std_precision,std_recall,std_F1
+test_mixed.tsv,400,331,69,0,0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+test_narrative.tsv,500,416,84,0,0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+test_rare.tsv,350,288,62,0,0,1.0,1.0,1.0,1.0,1.0,1.0,1.0

@@ -1,0 +1,292 @@
+{
+  "detection": {
+    "per_file": [
+      {
+        "file": "test_mixed.tsv",
+        "N": 400,
+        "TP": 331,
+        "TN": 69,
+        "FP": 0,
+        "FN": 0,
+        "accuracy": 1.0,
+        "TPR": 1.0,
+        "TNR": 1.0,
+        "NWD_accuracy": 1.0,
+        "std_precision": 1.0,
+        "std_recall": 1.0,
+        "std_F1": 1.0
+      },
+      {
+        "file": "test_narrative.tsv",
+        "N": 500,
+        "TP": 416,
+        "TN": 84,
+        "FP": 0,
+        "FN": 0,
+        "accuracy": 1.0,
+        "TPR": 1.0,
+        "TNR": 1.0,
+        "NWD_accuracy": 1.0,
+        "std_precision": 1.0,
+        "std_recall": 1.0,
+        "std_F1": 1.0
+      },
+      {
+        "file": "test_rare.tsv",
+        "N": 350,
+        "TP": 288,
+        "TN": 62,
+        "FP": 0,
+        "FN": 0,
+        "accuracy": 1.0,
+        "TPR": 1.0,
+        "TNR": 1.0,
+        "NWD_accuracy": 1.0,
+        "std_precision": 1.0,
+        "std_recall": 1.0,
+        "std_F1": 1.0
+      }
+    ],
+    "average": {
+      "accuracy": 1.0,
+      "TPR": 1.0,
+      "TNR": 1.0,
+      "NWD_accuracy": 1.0,
+      "std_precision": 1.0,
+      "std_recall": 1.0,
+      "std_F1": 1.0,
+      "N": 1250,
+      "TP": 1035,
+      "TN": 215,
+      "FP": 0,
+      "FN": 0
+    }
+  },
+  "speed": {
+    "experiments": [
+      {
+        "target_tokens": 150,
+        "actual_tokens": 150,
+        "time_ms": 1.85,
+        "hz": 81142.5
+      },
+      {
+        "target_tokens": 300,
+        "actual_tokens": 300,
+        "time_ms": 7.5,
+        "hz": 40020.8
+      },
+      {
+        "target_tokens": 500,
+        "actual_tokens": 500,
+        "time_ms": 6.06,
+        "hz": 82566.8
+      },
+      {
+        "target_tokens": 750,
+        "actual_tokens": 750,
+        "time_ms": 8.55,
+        "hz": 87709.0
+      },
+      {
+        "target_tokens": 1000,
+        "actual_tokens": 1000,
+        "time_ms": 6.63,
+        "hz": 150784.1
+      },
+      {
+        "target_tokens": 1500,
+        "actual_tokens": 1500,
+        "time_ms": 7.56,
+        "hz": 198425.8
+      },
+      {
+        "target_tokens": 2000,
+        "actual_tokens": 2000,
+        "time_ms": 16.94,
+        "hz": 118036.6
+      },
+      {
+        "target_tokens": 3000,
+        "actual_tokens": 3000,
+        "time_ms": 43.49,
+        "hz": 68974.1
+      },
+      {
+        "target_tokens": 5000,
+        "actual_tokens": 5000,
+        "time_ms": 22.13,
+        "hz": 225913.1
+      }
+    ],
+    "avg_hz": 117063.6,
+    "python_version": "3.14.6",
+    "cpu": "Intel64 Family 6 Model 78 Stepping 3, GenuineIntel",
+    "lexicon_size": 6113
+  },
+  "suggestion": {
+    "1": {
+      "total": 215,
+      "top1_acc": 0.6744186046511628,
+      "top3_acc": 0.8837209302325582,
+      "top5_acc": 0.9488372093023256,
+      "no_suggestion_rate": 0.0,
+      "avg_suggestions": 3.8511627906976744,
+      "by_type": {
+        "substitution": {
+          "total": 54,
+          "hit1": 37,
+          "hit3": 52,
+          "hit5": 54,
+          "no_sugg": 0
+        },
+        "transposition": {
+          "total": 47,
+          "hit1": 35,
+          "hit3": 46,
+          "hit5": 47,
+          "no_sugg": 0
+        },
+        "deletion": {
+          "total": 56,
+          "hit1": 26,
+          "hit3": 34,
+          "hit5": 45,
+          "no_sugg": 0
+        },
+        "insertion": {
+          "total": 58,
+          "hit1": 47,
+          "hit3": 58,
+          "hit5": 58,
+          "no_sugg": 0
+        }
+      }
+    },
+    "2": {
+      "total": 215,
+      "top1_acc": 0.4325581395348837,
+      "top3_acc": 0.7302325581395349,
+      "top5_acc": 0.8418604651162791,
+      "no_suggestion_rate": 0.0,
+      "avg_suggestions": 4.883720930232558,
+      "by_type": {
+        "substitution": {
+          "total": 54,
+          "hit1": 28,
+          "hit3": 49,
+          "hit5": 53,
+          "no_sugg": 0
+        },
+        "transposition": {
+          "total": 47,
+          "hit1": 16,
+          "hit3": 30,
+          "hit5": 35,
+          "no_sugg": 0
+        },
+        "deletion": {
+          "total": 56,
+          "hit1": 23,
+          "hit3": 32,
+          "hit5": 43,
+          "no_sugg": 0
+        },
+        "insertion": {
+          "total": 58,
+          "hit1": 26,
+          "hit3": 46,
+          "hit5": 50,
+          "no_sugg": 0
+        }
+      }
+    }
+  },
+  "unit_tests": {
+    "passed": 13,
+    "failed": 0,
+    "details": [
+      [
+        "PASS",
+        "detection_flags_nonwords",
+        "flagged={'xkɛ', 'naaht'}"
+      ],
+      [
+        "PASS",
+        "detection_accepts_real_words",
+        "known={'cuɛ', 'naath', 'kɛ'}"
+      ],
+      [
+        "PASS",
+        "suggestion_naaht_contains_naath",
+        "suggestions=['naath', 'nath', 'gaat', 'maath', 'baath']"
+      ],
+      [
+        "PASS",
+        "suggestion_xke_contains_ke",
+        "suggestions=['kɛ', 'akɛ', 'i̱kɛ', 'ɛkɛ']"
+      ],
+      [
+        "PASS",
+        "add_word_initially_unknown",
+        "is_known(xyznonword)=False"
+      ],
+      [
+        "PASS",
+        "add_word_now_known",
+        "is_known(xyznonword)=True after add"
+      ],
+      [
+        "PASS",
+        "add_word_not_flagged_in_check_text",
+        "results=[{'original': 'xyznonword', 'normalized': 'xyznonword', 'start': 0, 'end': 10, 'is_known': True}]"
+      ],
+      [
+        "PASS",
+        "ignore_initially_flagged",
+        ""
+      ],
+      [
+        "PASS",
+        "ignore_not_flagged_after_ignore",
+        "word is known after ignore_word()"
+      ],
+      [
+        "PASS",
+        "tokenize_combining_marks_not_split",
+        "tokens=['mi̱', 'ɛ̈', 'ɔ̈']"
+      ],
+      [
+        "PASS",
+        "tokenize_epsilon_diaeresis_one_token",
+        "tokens=['mi̱', 'ɛ̈', 'ɔ̈'], expected 3 tokens"
+      ],
+      [
+        "PASS",
+        "tokenize_negation_prefix",
+        "tokens=['/cu', 'kɛ']"
+      ],
+      [
+        "PASS",
+        "optional_caps_numbers_report",
+        "Behaviour: [('KƐ', 'kɛ', True), ('Naath', 'naath', True), ('KUOTH', 'kuoth', True), ('mi̱', 'mi̱', True)]"
+      ]
+    ]
+  },
+  "coverage": {
+    "lexicon_size": 6113,
+    "total_corpus_tokens": 23523,
+    "oov_tokens": 6,
+    "oov_rate": 0.00025506950644050506,
+    "oov_unique_words": 6,
+    "oov_examples": [
+      "ŋɔa̱a̱ŋ",
+      "ɣibru",
+      "ɣɛr",
+      "ɣɛran",
+      "ɣɛrɛn",
+      "ɣɛɣɛɣɛ"
+    ],
+    "note": "The lexicon was built from the same corpus, so the OOV rate on in-corpus text is artificially low. A truly held-out test set was not available."
+  }
+}
